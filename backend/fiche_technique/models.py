@@ -13,7 +13,7 @@ class Fabricant(models.Model):
 
 class Moteur(models.Model):
     nom_moteur = models.CharField(max_length=100)
-    cylindre = models.DecimalField(max_digits=4, decimal_places=2)
+    cylindre = models.DecimalField(max_digits=10, decimal_places=5)
     energie = models.CharField(max_length=100)
     architecture = models.CharField(max_length=100)
     alimentation = models.CharField(max_length=100)
